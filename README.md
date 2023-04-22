@@ -70,7 +70,7 @@ Logger.w("Test W");
 Logger.e("Test E");
 ```
 ##### Step 3. Read your logs programmatically(or search them manually under Documents/Logs/logs.txt):
-
+```java
 ArrayList<String> readRes = Logger.readLogsFromFile(this);
 if (readRes != null) {
   for (String readRe : readRes) {
@@ -78,6 +78,7 @@ if (readRes != null) {
       main_LBL_logs.setText(text);
     }
 }
+```
 
 ## License
 
