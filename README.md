@@ -34,7 +34,7 @@ dependencies {
 ```
 
 // For Writing & Reading logs.txt file To Documents/Logs/logs.txt -
-Step 1. Add the following permissions to your manifest:
+##### Step 1. Add the following permissions to your manifest:
 ```java
 // For Android 9:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -57,7 +57,7 @@ android:requestLegacyExternalStorage="true"
 // Inside application tag:
 android:requestLegacyExternalStorage="true"
 ```
-Step 2. Set your file and make some logs:
+##### Step 2. Set your file and make some logs:
 ```java
 
 Logger.setLogFile(this);
@@ -68,7 +68,7 @@ Logger.i("Test I");
 Logger.w("Test W");
 Logger.e("Test E");
 ```
-Step 3. Read your logs programmatically(or search them manually under Documents/Logs/logs.txt):
+##### Step 3. Read your logs programmatically(or search them manually under Documents/Logs/logs.txt):
 
 ArrayList<String> readRes = Logger.readLogsFromFile(this);
 if (readRes != null) {
