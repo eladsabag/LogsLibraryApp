@@ -18,7 +18,7 @@ Step 2. Add the dependency:
 dependencies {
   implementation 'com.github.eladsabag:LogsLibraryApp:1:00:01'
 }
-
+```
 ## Usage
 
 ##### StepProgress Constructor
@@ -31,9 +31,11 @@ dependencies {
         Logger.w("Test W");
         Logger.e("Test E");
 
+```
+
 // For Writing & Reading logs.txt file To Documents/Logs/logs.txt -
 Step 1. Add the following permissions to your manifest:
-
+```java
 // For Android 9:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -54,7 +56,7 @@ android:requestLegacyExternalStorage="true"
 
 // Inside application tag:
 android:requestLegacyExternalStorage="true"
-
+```
 Step 2. Set your file and make some logs:
 ```java
 
@@ -65,7 +67,7 @@ Logger.d("Test D");
 Logger.i("Test I");
 Logger.w("Test W");
 Logger.e("Test E");
-
+```
 Step 3. Read your logs programmatically(or search them manually under Documents/Logs/logs.txt):
 
 ArrayList<String> readRes = Logger.readLogsFromFile(this);
