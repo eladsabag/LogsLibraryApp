@@ -33,9 +33,10 @@ dependencies {
 
 ```
 
-// For Writing & Reading logs.txt file To Documents/Logs/logs.txt -
 ##### Step 1. Add the following permissions to your manifest:
 ```java
+// For Writing & Reading logs.txt file To Documents/Logs/logs.txt -
+
 // For Android 9:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
