@@ -79,6 +79,10 @@ if (readRes != null) {
 }
 ```
 
+## What's new ?
+
+1.00.04:
+
 ## License
 
 Copyright 2023 Elad Sabag
