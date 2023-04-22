@@ -42,7 +42,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.eladsabag'
             artifactId = 'LogsLibraryApp'
-            version = '1.00.02'
+            version = '1.00.04'
 
             afterEvaluate {
                 from components.release
